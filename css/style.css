@@ -26,21 +26,22 @@ input, button, textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* Colors */
-    --BGCOLOR:orange;
     --BGCOLOR-FADE:rgb(253,220,160);
+    --BGCOLOR:orange;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
-    --FONT-COLOR: #000;
     --BORDER-COLOR: #333;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK-ACTIVE: orange;
+    --BUTTON-COLOR: #FFF;
+    --FONT-COLOR: #000;
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #fff;
-    --NAV-BGCOLOR: #fff;
     --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
     --HERO-COLOR: #FFF;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --NAV-BGCOLOR: #fff;
 
     /* Borders */
     --BORDERS: 1px solid var(--BORDER-COLOR);
@@ -56,14 +57,19 @@ input, button, textarea {
 
 @media (prefers-color-scheme: dark) {   
     :root {
-        --BGCOLOR: #000;
         --BGCOLOR-FADE: gray;
-        --HEADER-COLOR: whitesmoke;
-        --NAV-BGCOLOR: rgb(20, 20, 20);
-        --HERO-COLOR: #333;
+        --BGCOLOR: #000;
         --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --BUTTON-COLOR:black;
         --FONT-COLOR: whitesmoke;
+        --HEADER-COLOR: whitesmoke;
+        --HERO-COLOR: #333;
         --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
     }
 }
 
@@ -227,7 +233,7 @@ a:active {
     margin-top: 1em;
 }
 
-/* COntact */
+/* Contact */
 .contact__h2 {
     margin: 0;
 }
@@ -256,7 +262,7 @@ a:active {
     padding: 0.5em;
     border-radius: var(--BORDER-RADIUS);
     background-color: var(--HIGHLIGHT-COLOR);
-    color: var(--HEADER-COLOR);
+    color: var(--BUTTON-COLOR);
 }
 
 /* Menu */
